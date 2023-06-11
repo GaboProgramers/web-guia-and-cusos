@@ -20,7 +20,7 @@ import { useState } from 'react';
 
 const HeaderNav = ({ darkMode, setDarkMode }) => {
 
-    const [openMenu, setOpenMenu] = useState(true)
+    const [openMenu, setOpenMenu] = useState(false)
 
     const darkModeSwicth = () => {
         setDarkMode(!darkMode)
