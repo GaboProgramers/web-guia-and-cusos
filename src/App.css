@@ -1,0 +1,73 @@
+:root {
+    --body-background-color: #242424;
+    --body-color: #fff;
+    --background-appearence: #2f2f2f;
+
+    /* colores primarios */
+    --color-primary: #ffffff;
+    --color-secondary: #000000;
+    --button-color: #5f7fff;
+    --card-background-color: #3a3a3a;
+    --color-letter-subtitle: #ebebeb;
+    --family-font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dark {
+    --body-background-color: #ffffff;
+    --body-color: #000000;
+    --background-appearence: ;
+
+    /* colores primarios */
+    --color-primary: #ffffff;
+    --color-secondary: #000000;
+    --button-color: #5f7fff;
+    --card-background-color: #3a3a3a;
+    --color-letter-subtitle: #ebebeb;
+}
+
+.App {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--body-background-color);
+    color: var(--body-color);
+    font-family: var(--family-font);
+}
+
+.App.dark {
+    background-color: var(--body-background-color);
+    color: var(--body-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+header {
+    display: block;
+}
+
+div {
+    display: block;
+}
