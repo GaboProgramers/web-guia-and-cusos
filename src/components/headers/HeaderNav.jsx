@@ -39,7 +39,11 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
       <div className="navBar">
         <div className="container">
           <div className="navBar-title">
-            <a href="" className="title">
+            <a
+              href=""
+              className="title"
+              aria-level="Link para refrescar al inicio"
+            >
               {!darkMode ? (
                 <img
                   src="/17_logo_icon_white.svg"
@@ -94,13 +98,22 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
                 rel="noreferrer"
                 target="_blank"
                 className="social-link"
+                aria-label="Link para red social Youtube"
               >
                 <BsYoutube />
               </a>
-              <a href="" className="social-link">
+              <a
+                href=""
+                className="social-link"
+                aria-label="Link para red social Github"
+              >
                 <BsGithub />
               </a>
-              <a href="" className="social-link">
+              <a
+                href=""
+                className="social-link"
+                aria-label="Link para red social Telegram"
+              >
                 <BsTelegram />
               </a>
               <a
@@ -108,16 +121,29 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
                 rel="noreferrer"
                 target="_blank"
                 className="social-link"
+                aria-label="Link para red social Twitter"
               >
                 <BsTwitter />
               </a>
-              <a href="" className="social-link">
+              <a
+                href=""
+                className="social-link"
+                aria-label="Link para red social Instagram"
+              >
                 <BsInstagram />
               </a>
-              <a href="" className="social-link">
+              <a
+                href=""
+                className="social-link"
+                aria-label="Link para red social Facebook"
+              >
                 <BsFacebook />
               </a>
-              <a href="" className="social-link">
+              <a
+                href=""
+                className="social-link"
+                aria-label="Link para red social Tiktok"
+              >
                 <BsTiktok />
               </a>
             </div>
@@ -161,13 +187,22 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
                           target="_blank"
                           className="social-links"
                           title="Youtube"
+                          aria-label="Link para red social Youtube"
                         >
                           <BsYoutube />
                         </a>
-                        <a href="" className="social-links">
+                        <a
+                          href=""
+                          className="social-links"
+                          aria-label="Link para red social Github"
+                        >
                           <BsGithub />
                         </a>
-                        <a href="" className="social-links">
+                        <a
+                          href=""
+                          className="social-links"
+                          aria-label="Link para red social Telegram"
+                        >
                           <BsTelegram />
                         </a>
                         <a
@@ -175,16 +210,29 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
                           rel="noreferrer"
                           target="_blank"
                           className="social-links"
+                          aria-label="Link para red social Twitter"
                         >
                           <BsTwitter />
                         </a>
-                        <a href="" className="social-links">
+                        <a
+                          href=""
+                          className="social-links"
+                          aria-label="Link para red social Instagram"
+                        >
                           <BsInstagram />
                         </a>
-                        <a href="" className="social-links">
+                        <a
+                          href=""
+                          className="social-links"
+                          aria-label="Link para red social Facebook"
+                        >
                           <BsFacebook />
                         </a>
-                        <a href="" className="social-links">
+                        <a
+                          href=""
+                          className="social-links"
+                          aria-label="Link para red social Tiktok"
+                        >
                           <BsTiktok />
                         </a>
                       </div>
@@ -194,7 +242,10 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
               </div>
             </div>
           </div>
-          <button className={`navBarHamburguer ${darkMode ? 'dark' : ''}`}>
+          <button
+            className={`navBarHamburguer ${darkMode ? 'dark' : ''}`}
+            aria-label="hamburguer"
+          >
             <span className="container-hamburguer" onClick={openMenuSlice}>
               {!openMenu ? (
                 <HiMenuAlt3 className="icon-menu-hamburguer" />
