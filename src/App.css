@@ -37,6 +37,7 @@
     background-color: var(--body-background-color);
     color: var(--body-color);
     font-family: var(--family-font);
+    overflow: hidden;
 }
 
 .App.dark {
@@ -70,4 +71,11 @@ header {
 
 div {
     display: block;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 55px;
 }
