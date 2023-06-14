@@ -35,7 +35,7 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
   };
 
   return (
-    <header className="header">
+    <div className="header">
       <div className="navBar">
         <div className="container">
           <div className="navBar-title">
@@ -160,7 +160,9 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
                 <div className="menu">
                   <div className={`group ${darkMode ? 'dark' : ''}`}>
                     <div className="item appearance">
-                      <p className="label">Appearance</p>
+                      <p className={`label ${darkMode ? 'dark' : ''}`}>
+                        Appearance
+                      </p>
                       <div className="appearance-action">
                         <button className="switch switch-appearance">
                           <span className="check">
@@ -256,7 +258,7 @@ const HeaderNav = ({ darkMode, setDarkMode }) => {
           </button>
         </div>
       </div>
-    </header>
+    </div>
   );
 };
 

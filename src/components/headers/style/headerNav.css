@@ -44,7 +44,7 @@
     top: 55px;
     left: -100%;
     width: 100%;
-    min-height: 92.2vh;
+    height: 100vh;
     background: var(--body-background-color);
     display: flex;
     justify-content: flex-start;
@@ -197,6 +197,11 @@
 }
 
 .group:first-child .item .label {
+    color: var(--color-letter-subtitle);
+    font-size: 1rem;
+}
+
+.group:first-child .item .label.dark {
     color: var(--color-secondary);
     font-size: 1rem;
 }
@@ -281,9 +286,11 @@
 
 @media (min-width: 768px) {
     .content {
+        height: 0;
         left: 0%;
         z-index: 1;
         background: transparent;
+        border: 1px solid transparent;
     }
 
     .content .navBar-menu {
@@ -292,6 +299,7 @@
         left: 130px;
         flex-direction: row;
         gap: 5px;
+        z-index: -1;
     }
 
     .navBarHamburguer {
@@ -366,7 +374,6 @@
     .menu-extra {
         width: 100%;
     }
-
 
     .menu-extra .menu {
         top: -58px;
@@ -454,7 +461,7 @@
 
     .group:last-child .social-link .social-link-list {
         position: relative;
-        top: 5px;
+        top: -5px;
         right: -150px;
         flex-wrap: nowrap;
         justify-content: center;

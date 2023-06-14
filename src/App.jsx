@@ -1,16 +1,26 @@
 import { useState } from 'react';
 import './App.css';
 import HeaderNav from './components/headers/HeaderNav';
+import SectionContainerTitle from './components/main/about_web/SectionContainerTitle';
+import SectionListLenguages from './components/main/about_web/SectionListLenguages';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
   return (
-    <main className={`App ${!darkMode ? '' : 'dark'}`}>
-      <div>
+    <div className={`App ${!darkMode ? '' : 'dark'}`}>
+      <header>
         <HeaderNav darkMode={darkMode} setDarkMode={setDarkMode} />
-      </div>
-    </main>
+      </header>
+      <main className="main__container">
+        <div className="container__section">
+          <SectionContainerTitle />
+        </div>
+        <div>
+          <SectionListLenguages />
+        </div>
+      </main>
+    </div>
   );
 }
 

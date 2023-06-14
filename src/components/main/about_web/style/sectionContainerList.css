@@ -1,0 +1,66 @@
+.feactures {
+    width: 100%;
+    margin-top: 100px;
+    position: relative;
+}
+
+.container__list {
+    margin: 0 auto;
+    max-width: 1152px;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -8px;
+}
+
+.item {
+    padding: 8px;
+    width: 100%;
+}
+
+.feacture {
+    border: 1px solid #2f2f2f;
+    border-radius: 12px;
+    padding: 24px;
+    height: max-content;
+    background-color: #2f2f2f;
+}
+
+/* para modo lith background-color: #e5e5e5 */
+.feacture .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    background-color: #242424;
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+}
+
+.feacture .title {
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@media (min-width: 640px) {
+    .item.grid-4 {
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .item.grid-4 {
+        width: 50%;
+    }
+}
+
+@media (min-width: 960px) {
+    .item.grid-4 {
+        width: 25%;
+    }
+}
