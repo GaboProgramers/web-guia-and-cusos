@@ -9,7 +9,7 @@ const BuyMeCoffe = () => {
           target="_blank"
         >
           <img
-            src="/public/bmcbrand/Buttons_&_Icons/blue-button.png"
+            src="/bmcbrand/Buttons_&_Icons/blue-button.png"
             alt="Buy me Coffe"
             className="coffe_img-destock"
           />
@@ -23,7 +23,7 @@ const BuyMeCoffe = () => {
           target="_blank"
         >
           <img
-            src="/public/bmcbrand/SVG_Files/bmc-logo.svg"
+            src="/bmcbrand/SVG_Files/bmc-logo.svg"
             alt="Buy me Coffe"
             className="coffe_img"
           />
