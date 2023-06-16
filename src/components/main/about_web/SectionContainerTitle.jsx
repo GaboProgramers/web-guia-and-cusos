@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './style/sectionContainerTitle.css';
 
 const SectionContainerTitle = () => {
@@ -13,12 +14,20 @@ const SectionContainerTitle = () => {
         </p>
         <div className="actions">
           <div className="action">
-            <a href="" className="btn mediun brand">
+            <Link to="/00-started" className="btn mediun brand">
               Ingresar
-            </a>
+            </Link>
+            {/* <a href="/00-started" className="btn mediun brand">
+              Ingresar
+            </a> */}
           </div>
           <div className="action">
-            <a href="" className="btn mediun alt">
+            <a
+              href="https://9qr.de/J9E6Lr"
+              className="btn mediun alt"
+              rel="noreferrer"
+              target="_blank"
+            >
               Ir a youtube
             </a>
           </div>

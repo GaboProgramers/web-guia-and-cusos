@@ -401,15 +401,15 @@
     }
 
     .content .navBar-menu {
-        width: 500px;
+        width: 430px;
         gap: 10px;
-        left: 150px;
+        left: 70px;
         z-index: 10;
     }
 
     .navBar-menu .navBar__Menu-link {
         width: 200px;
-        font-size: 0.8rem;
+        font-size: 0.70rem;
     }
 
     .extra-buttom {
@@ -456,13 +456,17 @@
         border: 1px solid var(--card-background-color);
         transition: border .3s ease-in-out;
         padding: 2px 1px;
-        right: -150px;
+        right: -50px;
+    }
+
+    .appearance-action .switch:hover {
+        border: 1px dashed var(--card-background-color);
     }
 
     .group:last-child .social-link .social-link-list {
         position: relative;
         top: -5px;
-        right: -150px;
+        right: -40px;
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
